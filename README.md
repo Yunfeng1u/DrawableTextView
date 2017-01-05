@@ -3,12 +3,11 @@
 
 
 这是一个对TextView进行了简单封装的小控件，可以简单地设置TextView四个方向上的图标，及图标的大小。
-
-
+<br>
 
 ![](https://github.com/Yunfeng1u/DrawableTextView/blob/master/art/WX20170105-203619.png)
 
-
+<br>
 在开发中我们经常会遇到上图这种情况，多见于设置页，直接的解决办法是
 ```
     <RelativeLayout
@@ -36,10 +35,12 @@
     </RelativeLayout>
 ```
 然后，再好一些的实现是从Android代码中设置。
+<br>
 
 
-
-那程序员最不喜欢的就是重复性工作，使用DrawableTextView，就可以很简单地实现这样的效果
+那程序员最不喜欢的就是重复性工作，使用DrawableTextView，就可以很简单地实现这样的效果。
+<br>
+PS：图标大小不用分别设置宽高，imageSize代表了图标宽度，图标高度会与原图等比例自动设置。
 ```
     <com.luyunfeng.drawabletextview.DrawableTextView
         app:leftImage="@mipmap/ic_launcher"
@@ -53,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 ```
-
+<br>
 除XML布局外，DrawableTextView中提供了如setLeftImage()这样的方法，可以在代码中动态设置。
 ```
 public void setLeftImage(@DrawableRes int drawableId, @DimenRes int dimen) {
@@ -62,7 +63,7 @@ public void setLeftImage(@DrawableRes int drawableId, @DimenRes int dimen) {
         refresh();
 }
 ```
-
+<br>
 如果需要Drawable或int类型参数的方法，大家可以自行添加。
-
+<br>
 文件只有两个，DrawableTextView.java 和 attr_drawable_textview.xml，现拷现用。
