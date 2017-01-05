@@ -32,4 +32,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <RelativeLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv1"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:text="test"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right_thin"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+    </RelativeLayout>
 </LinearLayout>
