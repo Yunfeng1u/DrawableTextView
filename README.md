@@ -5,6 +5,7 @@
 这是一个对TextView进行了简单封装的小控件，可以简单地设置TextView四个方向上的图标，及图标的大小。
 <br>
 
+## 问题
 ![](https://github.com/Yunfeng1u/DrawableTextView/blob/master/art/WX20170105-203619.png)
 
 <br>
@@ -39,10 +40,11 @@
 <br>
 <br>
 
+## 使用
 
 那程序员最不喜欢的就是重复性工作，使用DrawableTextView，就可以很简单地实现这样的效果。
 <br>
-PS：图标大小不用分别设置宽高，imageSize代表了图标宽度，图标高度会与原图等比例自动设置。
+（PS：图标大小不用分别设置宽高，imageSize代表了图标宽度，图标高度会与原图等比例自动设置。）
 ```
     <com.luyunfeng.drawabletextview.DrawableTextView
         app:leftImage="@mipmap/ic_launcher"
