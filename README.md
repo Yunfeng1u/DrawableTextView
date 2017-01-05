@@ -44,7 +44,7 @@
 
 那程序员最不喜欢的就是重复性工作，使用DrawableTextView，就可以很简单地实现这样的效果。
 <br>
-（PS：图标大小不用分别设置宽高，imageSize代表了图标宽度，图标高度会与原图等比例自动设置。）
+（PS：图标大小不用分别设置宽高，imageSize代表了图标宽度，图标高度会与根据原图比例自动设置。）
 ```
     <com.luyunfeng.drawabletextview.DrawableTextView
         app:leftImage="@mipmap/ic_launcher"
@@ -69,5 +69,4 @@ public void setLeftImage(@DrawableRes int drawableId, @DimenRes int dimen) {
 ```
 <br>
 如果需要Drawable或int类型参数的方法，大家可以自行添加。
-<br>
 文件只有两个，DrawableTextView.java 和 attr_drawable_textview.xml，现拷现用。
