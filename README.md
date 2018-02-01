@@ -10,6 +10,7 @@
 
 <br>
 在开发中我们经常会遇到上图这种情况，多见于设置页，直接的解决办法是
+
 ```
     <RelativeLayout
         android:layout_marginTop="@dimen/activity_vertical_margin"
@@ -35,6 +36,7 @@
             android:layout_height="16dp" />
     </RelativeLayout>
 ```
+
 然后，再好一些的实现是从Android代码中设置。
 <br>
 <br>
@@ -61,6 +63,7 @@
 ```
 <br>
 除XML布局外，DrawableTextView中提供了如setLeftImage()这样的方法，可以在代码中动态设置。
+
 ```
 public void setLeftImage(@DrawableRes int drawableId, @DimenRes int dimen) {
         leftImage = getDrawable(drawableId);
@@ -68,6 +71,7 @@ public void setLeftImage(@DrawableRes int drawableId, @DimenRes int dimen) {
         refresh();
 }
 ```
+
 <br>
 如果需要Drawable或int类型参数的方法，大家可以自行添加。
 文件只有两个，DrawableTextView.java 和 attr_drawable_textview.xml，现拷现用。
